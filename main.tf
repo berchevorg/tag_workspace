@@ -17,7 +17,7 @@ resource "null_resource" "env" {
   }
 }
 
-resource "null_resource" "env" {
+resource "null_resource" "tag" {
   provisioner "local-exec" {
     command = "echo ${var.TFC_CONFIGURATION_VERSION_GIT_TAG}"
   }
